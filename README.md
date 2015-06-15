@@ -1,6 +1,3 @@
-# SP2015_APS-Lisa-Wolfson-
-Summer 2015 Advanced Project Studio git for my summer project.
-
 #*Lisa Wolfson* Project Learning Plan Draft (6/14/15)
 
 ##Project Title
