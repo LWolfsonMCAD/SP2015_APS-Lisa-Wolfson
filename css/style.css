@@ -1,6 +1,10 @@
 /*font-family: 'Nixie One', cursive;
-
 font-family: 'Arvo', serif;*/
+
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
 
 html {
 	background-color: #424242;
@@ -8,10 +12,11 @@ html {
 
 body {
 	margin-top: 90px;
+	font-size: 16px;
 }
 
 div#wrapper {
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -73,25 +78,24 @@ div#intro {
 
 div#introFigure img {
 	position: absolute;
-	top: -196px;
+	top: -179px;
 	left: 488px;
 }
 
 #intro h1,
 #intro p {
-	padding-left: 12px;
+	padding-left: 1.25%; /*12px / 960px*/
 }
 
 #intro h1 {
 	padding-top: 15px;
-	font-family: 'Arvo', serif;
 	font-size: 1.7em;
 	text-shadow: 1px 1px #fff;
 }
 
 #intro p {
-	width: 470px;
-	font-size: 15px;
+	width: 48.958333%; /*470px / 960px*/
+	font-size: .9375em; /*15px / 16px*/
 	line-height: 1.2;
 	color: #464646;
 }
@@ -118,7 +122,7 @@ div#main {
 }
 
 #main h2 {
-	margin-top: 4px;	
+	margin-top: 4px;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 1.1em;
 	color: #404040;
@@ -133,29 +137,29 @@ img[src$=".jpg"] {
 Guitars Section
 ************************************/
 div#guitars {
-	width: 679px;
+	width: 70.729167%; /*679px / 960px*/
 	float: left;
-	padding-left: 12px;
+	padding-left: 1.767305%; /*12px / 679px*/
 }
 
 div#guitars > div {
-	width: 623px;
+	width: 91.752577%; /*623px / 679px*/
 	position: relative;
 }
 
 #guitars img[src$=".jpg"] {
-	width: 623px;
+	max-width: 100%;
 }
 
-#guitars p {
+#guitars p {	
 	font-family: 'Arvo', serif;;
-	font-size: 12px;
+	font-size: .75em; /*12px / 16px*/
 	color: #3c3c3c;
 	line-height: 1.2;
 }
 
 div#guitars div p:first-of-type {
-	text-indent: 10px;
+	text-indent: 1.605136%; /*10px / 623px*/
 }
 
 #guitars div p:last-of-type {
@@ -164,8 +168,8 @@ div#guitars div p:first-of-type {
 
 div#guitars div > div {
 	position: absolute;
-	top: 20px;
-	left: 500px;
+	top: 5px;
+	left: 425px;
 }
 
 
@@ -173,12 +177,13 @@ div#guitars div > div {
 Aside
 ************************************/
 div#aside {
-	width: 269px;
+	width: 29.270833%; /*269px / 960px*/
 	float: left;
 }
 
 div#aside img {
-	width: 156px;
+	width: 57.992565%; /*156px / 269px*/
+	max-width: 100%;
 }
 
 #aside ul {
@@ -200,7 +205,7 @@ div#links {
 	width: 100%;
 	height: 340px;
 	margin-top: 45px;
-	padding-left: 12px;
+	padding-left: 1.25%; /*12px / 960px*/
 }
 
 div#links > div {
@@ -219,7 +224,7 @@ div#links > div {
 	list-style: none;
 	padding: 0;
 	font-family: 'Helvetica Light', 'Helvetica', sans-serif;
-	font-size: 12px;
+	font-size: .75em; /*12px / 16px*/
 	font-weight: 100;
 	line-height: 1.2;
 	letter-spacing: 1px;
@@ -232,17 +237,21 @@ Footer
 div#footer {
 	clear: both;
 	width: 100%;
-	height: 34px;
-	color: #ccf7ff;	
+	height: 34px;	
 	background: #3092b7;
+}
+
+div#footer,
+#footer h1,
+#footer a {
+	color: #ccf7ff;		
 }
 
 #footer h1 {
 	display: inline;
 	float: left;
 	margin: 10px 12px;
-	font-size: 0.9em;
-	color: #ccf7ff;		
+	font-size: 0.9em;	
 }
 
 #footer ul {
@@ -258,9 +267,6 @@ div#footer {
 	font-weight: 100;
 }
 
-#footer a {
-	color: #ccf7ff;		
-}
 
 div#footer > div {
 	float: right;
