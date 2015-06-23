@@ -111,6 +111,7 @@ Main Section
 ************************************/
 div#main {
 	width: 100%;
+	padding-left: 1.25%; /*12px / 960px*/
 	background: #e9e9e9;
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #bdbdbd;
@@ -135,7 +136,7 @@ div#main:after {
 	color: #404040;
 }
 
-img[src$=".jpg"] {
+#main img[src$=".jpg"] {
 	border: 2px solid #bdbdbd;
 }
 
@@ -281,4 +282,96 @@ div#footer > div {
 	font-family: 'Helvetica Light', 'Helvetica', sans-serif;
 	font-size: 0.8em;
 	font-weight: 100;	
+}
+
+
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media screen and (max-width: 768px) {
+
+	body {
+		max-width: 592px;
+		background-color: #ffffff;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+
+	#header h1 {
+		color: #424242;
+		font-weight: bold;
+	}
+
+	div#nav {
+		background-color: #424242;
+	}
+
+	#nav li a {
+		color: #e9e9e9;
+	}
+
+	div#intro {
+		background-image: none;
+	}
+
+	div#introFigure img {
+		display: none;
+	}
+
+	#intro p {
+		width: 100%;
+	}
+
+	#main img[src$=".jpg"] {
+		border: none;
+	}
+
+	div#guitars {
+		width: 100%;
+	}
+
+	div#guitars div > div {
+		top: 30px;
+		left: 393px;
+	}
+
+	div#aside {
+		width: 101.25%;
+		margin: -1.25%;
+		background-color: #ffffff;
+	}
+
+	div#aside img {
+		width: 100%;
+	}
+
+	div#links > div {
+		width: 100%;
+	}
+
+	div#links h1 {
+		color: #424242;
+	}
+
+	div#links ul {
+		padding-left: 4.942966%; /*26px / 526px*/
+	}
+
+	div#footer {
+		background-color: #ffffff;
+	}
+
+	div#footer h1 {
+		width: 100%;
+		color: #424242;
+	}
+
+	div#footer ul {
+		display: none;
+	}
+
+	div#footer > div {
+		float: left;
+	}
+	
 }
