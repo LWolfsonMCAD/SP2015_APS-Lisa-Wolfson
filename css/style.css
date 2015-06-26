@@ -316,7 +316,9 @@ Mobile/Tablet Friendly
 	}
 
 	div#nav li {
-		width: 44.256757%; /*262px / 592px*/
+		/*width: 44.256757%; /*262px / 592px*/
+		width:239px;
+		width: 44.256757%;
 		margin-bottom: 23px;
 		padding: 40px 0px;
 		text-align: center;
@@ -325,7 +327,7 @@ Mobile/Tablet Friendly
 	}
 
 	#nav li:nth-child(odd) {
-		margin-right: 4.391892%; /*26px / 592px*/
+		/*margin-right: 4.391892%; /*26px / 592px*/
 	}
 
 	#nav li a {

@@ -1,0 +1,26 @@
+$back: red;
+
+body {
+
+
+	h1 {
+	background-color: $back;
+	font-size: 18px;
+	line-height: 1.125em;
+	}
+
+	h2 {
+		background-color: $back;
+	}
+
+	p {
+		background-color: $back;
+
+		img:first-of-type {
+			
+		}
+
+	}
+
+
+}
