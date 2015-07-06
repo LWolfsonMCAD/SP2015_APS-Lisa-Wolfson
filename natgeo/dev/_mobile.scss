@@ -1,0 +1,64 @@
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media screen and (max-width: 768px) {
+
+	body {
+		max-width: 592px;
+		background-color: #ffffff;
+		margin: 0 auto;
+	}
+
+	#header h1 {
+		margin-left: 35%;
+	}
+
+	#main-nav {
+		display: none; //Will style for slideout
+	}
+
+	#connect-social-media {
+		display: none;
+	}
+
+	#search {
+
+	}
+
+	#main {
+		margin-top: -1px;
+		border: 1px solid #000;
+
+		h1 {
+			margin: 20px 10px;
+		}
+
+		#top-stories {
+			width: 90%;
+			margin: 0 auto;
+
+			article {
+				margin-bottom: 35px;
+			
+					img {
+						display: inline;
+						float: left;
+						width: 45%; // 266px / 592px
+						margin-right: 10px;
+					}
+
+					h3 {
+						display: inline;
+					}
+
+					p {
+						font-size: 0.9em;
+					}
+			}
+
+			article.latest-story {
+				height: 160px;
+			}
+		}
+	}
+}
