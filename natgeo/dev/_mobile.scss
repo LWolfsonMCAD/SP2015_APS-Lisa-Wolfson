@@ -9,12 +9,74 @@ Mobile/Tablet Friendly
 		margin: 0 auto;
 	}
 
-	#header h1 {
-		margin-left: 35%;
+	#main-nav {
+		list-style: none;
+		background: #111;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+
+			ul {
+				margin-left: 5%;
+				margin-top: 100px;
+
+					li {
+						display: block;
+						width: 100%;
+						line-height: 2.5em;
+						letter-spacing: 1px;
+					}
+
+					li:first-of-type {
+						margin-left: 0;
+					}
+			}
 	}
 
-	#main-nav {
-		display: none; //Will style for slideout
+	.nav-trigger {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+		color: #fff;
+	}
+
+	label[for="nav-trigger"] {
+		position: fixed;
+		top: 35px;
+		left: 90px;
+		z-index: 2;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background-image: url('../img/menu_button_icon.png');
+		background-size: contain; 
+	}
+
+	.nav-trigger:checked + label {
+	    left: 215px;
+	}
+ 
+	.nav-trigger:checked ~ #wrapper {
+	    left: 200px;
+	    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	}
+
+	#wrapper {
+		min-width: 100%;
+		min-height: 100%;
+		background-color: #fff;
+		position: relative;
+		bottom: 100%;
+		left: 0;
+		z-index: 1;
+	}
+
+	#header h1 {
+		margin-left: 35%;
 	}
 
 	#connect-social-media {
@@ -31,6 +93,20 @@ Mobile/Tablet Friendly
 
 		h1 {
 			margin: 20px 10px;
+		}
+
+		section {
+			margin: 45px 10px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		button {
+			width: 40%;
+			margin-left: 30%
 		}
 
 		#top-stories {
@@ -52,12 +128,41 @@ Mobile/Tablet Friendly
 					}
 
 					p {
+						margin-top: 5px;
 						font-size: 0.9em;
+						line-height: 1.3em;
 					}
 			}
 
 			article.latest-story {
 				height: 160px;
+			}
+		}
+
+		#blog-highlights {
+			ul {
+				list-style: none;
+
+					li {
+						line-height: 1.8em;
+					}
+			}
+		}
+
+		#latest-videos {
+			ul {
+				padding-left: 0;
+				list-style: none;
+				text-align: center;
+
+					li p {
+						margin-top: 5px;
+						margin-bottom: 35px;
+					}
+			}
+
+			iframe {
+				
 			}
 		}
 	}
