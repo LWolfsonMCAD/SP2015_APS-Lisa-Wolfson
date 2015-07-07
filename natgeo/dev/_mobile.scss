@@ -45,9 +45,9 @@ Mobile/Tablet Friendly
 	}
 
 	label[for="nav-trigger"] {
-		position: fixed;
+		position: absolute;
 		top: 35px;
-		left: 90px;
+		left: 100px;
 		z-index: 2;
 		width: 30px;
 		height: 30px;
@@ -61,7 +61,7 @@ Mobile/Tablet Friendly
 	}
  
 	.nav-trigger:checked ~ #wrapper {
-	    left: 200px;
+	    left: 700px;
 	    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 	}
 
@@ -83,8 +83,17 @@ Mobile/Tablet Friendly
 		display: none;
 	}
 
-	#search {
+	#header #search {
+		height: 35px;
+		position: relative;
+		top: 35px;
+		right: -85px;
+		background-image: url('../img/white_search_icon35x35.png');
+		background-repeat: no-repeat;
 
+			form {
+				display: none;
+			}
 	}
 
 	#main {
@@ -99,14 +108,10 @@ Mobile/Tablet Friendly
 			margin: 45px 10px;
 		}
 
-		a {
-			text-decoration: none;
-			color: #000;
-		}
-
 		button {
 			width: 40%;
-			margin-left: 30%
+			margin-left: 30%;
+			margin-top: 20px;
 		}
 
 		#top-stories {
@@ -114,12 +119,13 @@ Mobile/Tablet Friendly
 			margin: 0 auto;
 
 			article {
-				margin-bottom: 35px;
+				margin-bottom: 15px;
 			
 					img {
 						display: inline;
 						float: left;
 						width: 45%; // 266px / 592px
+						max-height: 145px;
 						margin-right: 10px;
 					}
 
@@ -142,9 +148,15 @@ Mobile/Tablet Friendly
 		#blog-highlights {
 			ul {
 				list-style: none;
+				pading-left: 20px;
 
 					li {
 						line-height: 1.8em;
+
+							a {
+								font-weight: 700;
+								font-size: 1.2em;
+							}
 					}
 			}
 		}
