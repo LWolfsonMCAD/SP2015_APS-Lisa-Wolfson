@@ -66,9 +66,9 @@ Mobile/Tablet Friendly
 		background-size: contain; 
 	}
 
-	.nav-trigger:checked + label {
-	    // left: 215px;
-	}
+	// .nav-trigger:checked + label {
+	//     left: 215px;
+	// }
  
 	.nav-trigger:checked ~ #wrapper {
 	    left: 700px;
