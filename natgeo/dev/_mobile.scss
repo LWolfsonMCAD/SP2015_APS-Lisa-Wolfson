@@ -63,12 +63,19 @@ Mobile/Tablet Friendly
 		position: absolute;
 		clip: rect(0, 0, 0, 0);
 		color: #fff;
+		z-index: 1000;
 	}
+
+	// MENU FIXES START HERE!
+
+	$noListLableLeft: 30px;
+	$listWrapperLeft: 700px;
+	$listLableLeft: ($noListLableLeft - $listWrapperLeft);
 
 	label[for="nav-trigger"] {
 		position: absolute;
 		top: 35px;
-		left: 100px;
+		left: $noListLableLeft;
 		z-index: 2;
 		width: 30px;
 		height: 30px;
@@ -76,15 +83,17 @@ Mobile/Tablet Friendly
 		background-image: url('../img/menu_button_icon.png');
 		background-size: contain; 
 	}
-
-	// .nav-trigger:checked + label {
-	//     left: 215px;
-	// }
  
-	.nav-trigger:checked ~ #wrapper {
-	    left: 700px;
-	    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	.nav-trigger:checked + #wrapper {
+	    left: $listWrapperLeft;
+
+	    label[for="nav-trigger"] {
+	    	left:$listLableLeft;
+	    }
+
 	}
+
+	// END MENU FIXES
 
 	#wrapper {
 		min-width: 100%;
