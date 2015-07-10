@@ -17,7 +17,7 @@ Mobile/Tablet Friendly
 		margin: 0 auto;
 	}
 
-	#main-nav {
+	#mobile-main-nav {
 		list-style: none;
 		background: #111;
 		width: 90%;
@@ -40,6 +40,13 @@ Mobile/Tablet Friendly
 						width: 100%;
 						line-height: 2.5em;
 						letter-spacing: 1px;
+					
+							a {
+								padding: 10px;
+								font-weight: 400;
+								text-decoration: none;
+								color: #fff;
+							}
 					}
 
 					li:first-of-type {
@@ -47,6 +54,10 @@ Mobile/Tablet Friendly
 					}
 			}
 	}
+
+	// div#mobile-menu-toggle {
+	// 	position: relative;
+	// }
 
 	.nav-trigger {
 		position: absolute;
@@ -185,22 +196,65 @@ Mobile/Tablet Friendly
 			}
 
 			iframe {
-				
+				max-width: 400px;
+				max-height: 226px;		
 			}
 		}
 
 		#footer {
-			h6 {
-				margin-left: 15px;
-				margin-bottom: 5px;
-				font-size: 1.2em;
+			#site-info {
+				width: 100%;
+				height: 40px;
+				padding-top: 3px;
+				background-color: #4e5b4f;
+
+					img {
+						display: inline;
+						float: left;
+						padding-left: 8px;
+						max-width: 20px;
+						margin: 6px 6px;
+					}
 			}
 
-			ul {
-				list-style: none;
+			h5 {
+				float: left;
+				margin-top: 11px;
+				font-size: 1em;
+				font-weight: 400;
+				color: #fff;
+			}
 
-					li {
-						line-height: 1.5em;
+			#copyright {
+				float: right;
+				padding-right: 10px;
+				font-size: 0.8em;
+				color: #fff;
+			}
+
+			#footer-nav {
+				padding-left: 15px;
+				padding-bottom: 15px;
+				background-color: #ebebeb;
+
+					h6 {
+						font-size: 1em;
+						margin-bottom: 10px;
+					}
+			
+					h6:first-of-type {
+						margin-top: 0;
+						padding-top: 20px;
+					}
+
+					ul {
+						list-style: none;
+						margin-top: 5px;
+						margin-bottom: 0;
+
+							li {
+								line-height: 1.5em;
+							}
 					}
 			}
 		}

@@ -10,7 +10,7 @@
 <body>
 
 <!-- Moved the main-nav outside of the site wrapper for off-screen sliding menu. -->
-    <div id="main-nav">
+    <div id="mobile-main-nav">
         <ul>
             <li><a href="#">News</a></li>
             <li><a href="#">Video</a></li>
@@ -26,8 +26,10 @@
         </ul>
     </div>
 
-    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-    <label for="nav-trigger"></label>
+<!--     <div id="mobile-menu-toggle"> -->
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+<!--     </div> -->
 
 <div id="wrapper">
     <div id="header">
@@ -62,39 +64,39 @@
                 <p>As California's drought endangers Chinook salkmon, fisheries officials release 600.000 baby salmon into the Sacramento River, triple the usual number, in hopes that many return to spawn.</p>
             </article></a>
 
-            <article class="latest-story">
+            <a href="#"><article class="latest-story">
                 <img src="img/when-snows-fail303x227.jpg" alt"When Snows Fail">
 
-                <h3><a href="#">When the Snows Fail</a></h3>
+                <h3>When the Snows Fail</h3>
 
                 <p>The American West faces persistent drought, whether or not relief comes this winter. When will the hard choices be made?</p>
-            </article>
+            </article></a>
 
-            <article class="latest-story">
+            <a href="#"><article class="latest-story">
                 <img src="img/canadians-protect-forest303x227.jpg" alt="Canadians">
 
-                <h3><a href="#">Indigenous Canadians Seek to Protect Forest Homeland</a></h3>
+                <h3>Indigenous Canadians Seek to Protect Forest Homeland</h3>
 
                 <p>By winning protection for their boreal forest, indigenous Canadians help slow global warming.</p>
-            </article>
+            </article></a>
 
-            <article>
-                <h3><a href="#">Miami's Choice: Bigger Ships or Coral Reefs?</a></h3>
+            <a href="#"><article>
+                <h3>Miami's Choice: Bigger Ships or Coral Reefs?</h3>
 
                 <!-- <p>Dredging in Biscayne Bay inflicts heavy damage on North America's only coral reef tract.</p> -->
-            </article>
+            </article></a>
 
-            <article>
-                <h3><a href="#">Fungus Endagners Madagascar's Frogs</a></h3>
+            <a href="#"><article>
+                <h3>Fungus Endagners Madagascar's Frogs</h3>
 
                 <!-- <p>Chytrid fungus, responsible for amphibian declines and extinctions around the world, is now confirmed in Madagascar.</p> -->
-            </article>
+            </article></a>
 
-            <article>
-                <h3><a href="#">Drought, Floods Share Common Cause</a></h3>
+            <a href="#"><article>
+                <h3>Drought, Floods Share Common Cause</h3>
 
                 <!-- <p>With severe water shortages in Brazil's cities and destructive floods in the Amazon, the boom-and-bust phenomenon may be South America's new normal.</p> -->
-            </article>
+            </article></a>
 
             <button type="button" class="section-button">Find Archived Stories</button>
         </section>
@@ -118,16 +120,16 @@
             <h2>Latest Videos</h2>
 
             <ul>
-                <li><iframe src="" name="" class="latest-videos"></iframe>
+                <li><iframe src="http://assets.nationalgeographic.com/modules-video/assets/ngsEmbeddedVideo.html?guid=0454150f-aea7-4e98-a3a3-6cb1365a05dc" width="640" height="365" frameborder="0" seamless="seamless" scrolling="no" allowFullScreen class="latest-videos"></iframe>
                 <p><a href="#" target="">Inside the Wood Stove Decathlon</a></p></li>
 
-                <li><iframe src="" name="" class="latest-videos"></iframe>
+                <li><iframe src="http://assets.nationalgeographic.com/modules-video/assets/ngsEmbeddedVideo.html?guid=b6384d2a-3d04-4cb6-81ee-ecc1c4adcac5" width="640" height="365" frameborder="0" seamless="seamless" scrolling="no" allowFullScreen class="latest-videos"></iframe>
                 <p><a href="#" target="">Hurricanes 101</a></p></li>
 
-                <li><iframe src="" name="" class="latest-videos"></iframe>
+                <li><iframe src="http://assets.nationalgeographic.com/modules-video/assets/ngsEmbeddedVideo.html?guid=84c58a2f-b490-4ee1-a8b0-ea909631bd96" width="640" height="365" frameborder="0" seamless="seamless" scrolling="no" allowFullScreen class="latest-videos"></iframe>
                 <p><a href="#" target="">World's Weirdest: Biggest Spider</a></p></li>
 
-                <li><iframe src="" name="" class="latest-videos"></iframe>
+                <li><iframe src="http://assets.nationalgeographic.com/modules-video/assets/ngsEmbeddedVideo.html?guid=e7d83a9c-6302-4afb-9c52-18fab937524f" width="640" height="365" frameborder="0" seamless="seamless" scrolling="no" allowFullScreen class="latest-videos"></iframe>
                 <p><a href="#" target="">Watch: Intense Auroras</a></p></li>
             </ul>
 
@@ -136,9 +138,13 @@
         </section>
 
     <div id="footer">
-        <h5>National Geographic</h5>
+        <div id="site-info">
+            <img src="img/ng_rectangle_small.png" alt="National Geographic Logo Rectangle">
 
-        <p id="copyright">&copy; 1996-2015 National Geographic Society.</p></br> All rights reserved.</p>
+            <h5>National Geographic</h5>
+
+            <p id="copyright">&copy; 1996-2015 National Geographic Society. All rights reserved.</p>
+        </div>
 
         <div id="footer-nav">
             <h6>General</h6>
