@@ -17,10 +17,16 @@ Mobile/Tablet Friendly
 		margin: 0 auto;
 	}
 
+	#main-nav,
+	button.signin-button {
+		display: none;
+	}
+
 	#mobile-main-nav {
+		display: block;
 		list-style: none;
 		background: #111;
-		width: 90%;
+		// width: 90%;
 		max-width: 592px;
 		height: 100%;
 		margin: 0 auto;
@@ -105,6 +111,10 @@ Mobile/Tablet Friendly
 		z-index: 1;
 	}
 
+	div#header {
+		height: 80px;
+	}
+
 	#header h1 {
 		margin-left: 35%;
 	}
@@ -114,6 +124,7 @@ Mobile/Tablet Friendly
 	}
 
 	#header #search {
+		margin-top: 0;
 		width: 35px;
 		height: 35px;
 		position: relative;
@@ -127,7 +138,7 @@ Mobile/Tablet Friendly
 			}
 	}
 
-	#main {
+	div#main {
 		margin-top: -1px;
 		border: 1px solid #000;
 
@@ -145,7 +156,7 @@ Mobile/Tablet Friendly
 			margin-top: 20px;
 		}
 
-		#top-stories {
+		section#top-stories {
 			width: 90%;
 			margin: 0 auto;
 
@@ -172,6 +183,9 @@ Mobile/Tablet Friendly
 			}
 
 			article.latest-story {
+				display: block;
+				float: clear;
+				width: 100%;
 				height: 160px;
 			}
 		}
