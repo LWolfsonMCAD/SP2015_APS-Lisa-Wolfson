@@ -169,8 +169,8 @@
 					}
 
 					.latest-stories {
-						width: 45%;
-						float: clear;
+						width: 50%;
+						float: left;
 
 						article {
 							margin-top: 20px;
@@ -188,12 +188,15 @@
 
 								h3 {
 									display: inline;
+									font-size: 1.2em;
 								}
 								
 								p {
 									display: block;
 									width: 60%;
 									float: right;
+									font-size: 0.8em;
+									line-height: 1.3em;
 								}
 						}
 
@@ -204,7 +207,80 @@
 			}
 
 			#blog-highlights {
-				clear: both;
+				float: left;
+				width: 20%;
+				margin-left: 32px;
+				padding-left: 20px;
+				border-left: thin solid #ccc;
+				border-right: thin solid #ccc;
+
+					h2 {
+						font-size: 1.1em;
+					}
+
+					ul {
+						width: 100%;
+						list-style: none;
+						padding: 0;
+
+							li {
+								margin-right: 0;
+								margin-bottom: 20px;
+								padding-right: 10px;
+
+									img {
+										max-width: 160px;
+										display: block;
+										margin-bottom: 10px;
+									}
+
+									a {
+										font-size: 0.75em;
+									}
+							}
+					}
+					button {
+						display: none;
+					}
+
+			}
+
+			#latest-videos {
+				float: left;
+				width: 20%;
+				margin-left: 20px;
+				padding-left: 20px;
+				border-right: thin solid #ccc;
+
+					h2 {
+						font-size: 1.1em;
+					}
+
+					ul {
+						width: 100%;
+						list-style: none;
+						padding: 0;
+
+							li {
+								max-width: 160px;
+								margin-right: 0;
+								margin-bottom: 20px;
+
+									iframe {
+										width: 160px;
+										height: 90px;
+										max-width: 160px;
+										display: block;
+									}
+
+									a {
+										font-size: 0.75em;
+									}
+							}
+					}
+					button {
+						display: none;
+					}
 			}
 	}
 // }
