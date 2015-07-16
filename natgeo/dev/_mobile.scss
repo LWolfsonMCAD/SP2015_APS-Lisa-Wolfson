@@ -310,11 +310,16 @@ Mobile/Tablet Friendly
 
 		#footer {
 			clear: both;
-			
-				#site-info {
-					width: 100%;
+			padding-top: 0px !important;
+			background-color: none;
+			border-top: none !important;
+
+				div#site-info {
+					clear: both;
+					width: 100% !important;
 					height: 40px;
 					padding-top: 3px;
+					padding-left: 0 !important;
 					background-color: #4e5b4f;
 
 						img {
@@ -336,17 +341,27 @@ Mobile/Tablet Friendly
 
 				#copyright {
 					float: right;
+					width: 57%;
 					padding-right: 10px;
 					font-size: 0.8em;
 					color: #fff;
 				}
 
 				#footer-nav {
-					padding-left: 15px;
+					clear: both;
+					width: 100%;
+					height: auto;
 					padding-bottom: 15px;
 					background-color: #ebebeb;
 
+						div {
+							width: 100%;
+							clear: both;
+							padding-left: 15px;
+						}
+
 						h6 {
+							display: block;
 							font-size: 1em;
 							margin-bottom: 10px;
 						}

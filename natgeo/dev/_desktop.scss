@@ -132,6 +132,10 @@
 	div#main {
 		padding: 20px;
 
+			// div.content {
+			// 	height: auto;
+			// }
+
 			h1 {
 				margin-bottom: 15px;
 				font-size: 2.4em;
@@ -248,9 +252,11 @@
 			#latest-videos {
 				float: left;
 				width: 20%;
+				height: auto;
 				margin-left: 20px;
+				margin-bottom: 50px;
 				padding-left: 20px;
-				border-right: thin solid #ccc;
+				// border-right: thin solid #ccc;
 
 					h2 {
 						font-size: 1.1em;
@@ -280,6 +286,55 @@
 					}
 					button {
 						display: none;
+					}
+			}
+
+			
+			div#footer {
+				clear: both;
+				height: 200px;
+				padding-top: 40px;
+				background-color: #ebebeb;
+				border-top: 20px solid #4e5b4f;
+
+					div#site-info {
+						float: left;
+						width: 43%;
+						padding-left: 10px;
+
+							h5 {
+								display: inline;
+								font-size: 1.2em;
+							}
+
+							p#copyright {
+								width: 232px;
+								font-size: 0.75em;
+								color: #ccc;
+							}
+					}
+
+					div#footer-nav {
+						float: left;				
+						width: 55%;
+						height: 120px;
+
+							div {
+								float: left;
+								width: 32%;
+							}
+
+							h6 {
+								display: inline;
+								font-size: 0.8em;
+							}
+
+							ul {
+								display: inline;						
+								width: 32%;
+								font-size: 0.8em;
+								list-style: none;
+							}
 					}
 			}
 	}
