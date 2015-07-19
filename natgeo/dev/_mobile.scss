@@ -310,42 +310,55 @@ Mobile/Tablet Friendly
 
 		#footer {
 			clear: both;
-			padding-top: 0px !important;
-			background-color: none;
-			border-top: none !important;
+			height: auto;
+			padding-top: 0px;
+			background-color: red;
+			border-top: none;
 
 				div#site-info {
 					clear: both;
-					width: 100% !important;
+					width: 100%;
 					height: 40px;
 					padding-top: 3px;
-					padding-left: 0 !important;
+					padding-left: 0;
+					background: url('../img/ng_rectangle_mobile.png');
+					background-repeat: no-repeat;
+					background-position: 15px;
 					background-color: #4e5b4f;
 
-						img {
-							display: inline;
+						// img {
+						// 	display: inline;
+						// 	float: left;
+						// 	padding-left: 8px;
+						// 	max-width: 20px;
+						// 	margin: 6px 6px;
+						// }
+						div#footer-title {
+							padding-left: 43px;
+						}
+
+						h5 {
 							float: left;
-							padding-left: 8px;
-							max-width: 20px;
-							margin: 6px 6px;
+							margin-top: 11px;
+							font-size: 1em;
+							font-weight: 400;
+							color: #fff;
+								
+								br {
+									display: none;
+								}
+						}
+
+						#copyright {
+							float: right;
+							width: auto;
+							padding-right: 10px;
+							font-size: 0.8em;
+							color: #fff;
 						}
 				}
 
-				h5 {
-					float: left;
-					margin-top: 11px;
-					font-size: 1em;
-					font-weight: 400;
-					color: #fff;
-				}
-
-				#copyright {
-					float: right;
-					width: 57%;
-					padding-right: 10px;
-					font-size: 0.8em;
-					color: #fff;
-				}
+				
 
 				#footer-nav {
 					clear: both;
@@ -375,8 +388,10 @@ Mobile/Tablet Friendly
 							list-style: none;
 							margin-top: 5px;
 							margin-bottom: 0;
+							font-size: 1em;
 
 								li {
+									padding-left: 10px;
 									line-height: 1.5em;
 								}
 						}

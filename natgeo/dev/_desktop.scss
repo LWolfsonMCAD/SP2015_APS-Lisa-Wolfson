@@ -1,4 +1,8 @@
 // @media screen and (min-width: 769px) and (max-width: 1500px) {
+	html {
+
+	}
+
 	body {
 		font-family: 'Arial', sans-serif;
 		font-size: 16px;
@@ -290,31 +294,39 @@
 			}
 
 			
-			div#footer {
+			#footer {
 				clear: both;
+				position: relative;
 				height: 200px;
 				padding-top: 40px;
 				background-color: #ebebeb;
 				border-top: 20px solid #4e5b4f;
 
-					div#site-info {
+					#site-info {
 						float: left;
 						width: 43%;
 						padding-left: 10px;
+						background: url('../img/ng_rectangle_small.png');
+						background-repeat: no-repeat;
+						background-position: 10px 0px;
+
+							div#footer-title {
+									padding-left: 35px;
+							}
 
 							h5 {
 								display: inline;
 								font-size: 1.2em;
 							}
 
-							p#copyright {
+							#copyright {
 								width: 232px;
 								font-size: 0.75em;
 								color: #ccc;
 							}
 					}
 
-					div#footer-nav {
+					#footer-nav {
 						float: left;				
 						width: 55%;
 						height: 120px;
