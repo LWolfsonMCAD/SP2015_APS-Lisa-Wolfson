@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------
+## Mobile
+--------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+
+
+/*--------------------------------------------------------------
+## Member Bios Post
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* commenting out the old mobile info for now...
+
+body {
+	width: 100%;
+	margin:0;
+}
+
+.site-main {
+	margin: 0;
+}
+
+#site-logo {
+	width: 120px;
+	height: auto;
+	margin: 5px 15px;
+}
+
+#site-navigation {
+	margin-top: 0px;
+}
+
+#site-navigation button.menu-toggle {
+	position: relative;
+	top: 50px;
+	left: -42px;
+}
+
+#primary-menu {
+	position: relative;
+	top: 50px;
+	left: -42px;
+	background: #2CBF89;
+}
+
+.main-navigation li {
+	float: none;
+}
+
+.main-navigation ul ul a {
+	width: 140px;
+}
+
+
+#primary-menu li a:hover {
+	background: #fff;
+}
+
+#primary-menu ul.sub-menu {
+	position: absolute;
+	top: 0px;
+	left: 194px;
+}
+
+#social-menu {
+	top: -50px;
+	left: 2px;
+}
+
+iframe {
+	width: 70%;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+}
+
+/*HOMEPAGE*/
+
+#featured-section {
+	width: 100%;
+	margin: -50px 15px 20px;
+	border-bottom: dotted 5px #2CBF89;	
+}
+
+article.facebook,
+article.twitter,
+article.youtube {
+	width: 100%; 
+	height: auto;	
+}
+
+article.facebook,
+article.twitter {
+	padding-bottom: 10px;
+	border-bottom: dotted 5px #2CBF89;
+}
+
+div.aiwidgetscss.widget {
+	width: 100%; 
+}
+
+#homepage-introduction {
+	width: 100%;
+	margin: 20px 15px;
+}
+
+.site-info {
+	margin-left: 0;
+	text-align: center;
+}
+
+
+/*SKETCHES PAGE*/
+section.sketch-videos,
+section.sketch-photos {
+	width: 100%;
+	margin: 0px 15px;
+}
+
+.sketch-videos h2,
+.sketch-photos h2 {
+	text-align: center;
+}
+
+.sketch-videos iframe {
+	width: 276px;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+}
+
+div.popup-gallery {
+	margin: 0;
+}
+
+div.popup-gallery div.image-wrap {
+	width: 145px;
+}
+
+
+/*MEMBER BIOS*/
+.member-menu {
+	width: 100%;
+	margin-top: -58px;
+	font-size: 1.4em;
+}
+
+ul#menu-member-menu {
+	width: 100%;
+	margin: 0px 15px;
+}
+
+#menu-member-menu li {
+	display: inline;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+#menu-member-menu li a {
+	padding: 0px 10px;
+}
+
+#menu-member-menu li.menu-item.current-menu-item > a {
+	background: #2CBF89;
+}
+
+section.member-biography {
+	width: 100%;
+	margin: 20px 15px;
+}
+
+header.member-biography {
+	width: 100%;
+}
+
+section.member-favorites {
+	float: none;
+	width: 75%;
+	margin: 8%;
+}
+
+}
+

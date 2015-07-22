@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+### Member Bio Posts
+--------------------------------------------------------------*/
+.member-biography {
+	float: left;
+	/*width: 497px;*/
+	width: 55.958%;
+	margin-top: 3px;
+	margin-right: 4px;
+	padding-left: 25px;
+}
+
+img.member-photo {
+	width: 32.998%;
+	height: auto;
+}
+
+.member-name {
+	clear: none;
+	width: 57.743%;
+	margin: -18px 22px 0px;
+}
+
+.members-title {
+	margin: -10px 22px;
+	font-size: 1rem;
+}
+
+.member-quote {
+	width: 57.743%;
+	margin-top: 42px;
+}
+
+.member-quote blockquote {
+	display: inline-block;
+	margin: 0 0 0 20px;
+	line-height: 0.7;
+	font-size: 2rem;
+}
+
+blockquote:before {
+	float: left;
+	margin-top: -22px;
+	content: "\201C";
+	font-size: 2.5em;
+	color: #ccc;
+}
+
+blockquote p {
+	margin-bottom: 0;
+}
+
+.member-bio {
+	width: 100%;
+	margin-top: 25px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-width: 215px;
+    -moz-column-width: 215px;
+    column-width: 215px;
+
+	-webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 10px; /* Firefox */
+	column-gap: 10px;
+	font-size: 14px;
+}
+
+.member-bio p:first-of-type {
+	margin-top: 0;
+}
+
+.member-bio p {
+	margin-bottom: 5px;
+}
+
+.member-favorites {
+	float: right;
+	width: 23.437%;
+	margin: 52px 0px 72px;
+}
+
+.member-favorites h2 {
+	display: none;
+}
+
+.member-favorites article {
+	margin-top: -20px;
+	margin-bottom: 25px;
+}
+
+.member-favorites h3 {
+	margin-bottom: 0;
+}
+
+.member-favorites ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.member-favorites li {
+	font-size: 14px;
+}
