@@ -253,7 +253,7 @@ header#masthead {
 				h1#site-title {
 					display: inline;
 					float: right;
-					margin-top: -16px;
+					margin-top: -50px;
 					margin-bottom: 0;
 					padding-right: 15px;
 					font-size: 1.3em;
@@ -264,30 +264,40 @@ header#masthead {
 /*--------------------------------------------------------------
 ## Homepage
 --------------------------------------------------------------*/
-div#primary #main {
-	section.social-media-feeds {
-		padding-top: 0px;
+div#primary {
+	position: relative;
+	top: -65px;
 
-			article.youtube {
-					iframe {
-						margin: 10px 0px;
+		#main {
+			section.social-media-feeds {
+				padding-top: 0px;
+
+					article.youtube {
+							iframe {
+								margin: 10px 0px;
+							}
 					}
+
 			}
 
-	}
-
-	section#homepage-introduction {
-		div.introduction-content {
-			margin-top: 0px;
+			section#homepage-introduction {
+				div.introduction-content {
+					margin-top: 0px;
+				}
+			}
 		}
-	}
 }
 
 /*--------------------------------------------------------------
 ## Member Bios Post
 --------------------------------------------------------------*/
 	div#primary #main {
+		div.member-menu {
+			margin-top: 7px;
+		}
+
 		section.member-biography {
+
 				header {
 					width: 100%; 
 
