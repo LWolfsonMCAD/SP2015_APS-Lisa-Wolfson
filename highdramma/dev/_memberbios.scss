@@ -10,25 +10,27 @@
 	padding-left: 25px;
 }
 
-img.member-photo {
-	width: 32.998%;
-	height: auto;
-}
-
 .member-name {
 	clear: none;
-	width: 57.743%;
-	margin: -18px 22px 0px;
+	width: 100%;
+	margin: -18px 0px 0px;
 }
 
 .members-title {
-	margin: -10px 22px;
+	width: 100%;
+	margin: -10px 0px 10px;
 	font-size: 1rem;
+}
+
+img.member-photo {
+	width: 36%;
+	height: auto;
 }
 
 .member-quote {
 	width: 57.743%;
 	margin-top: 42px;
+	margin-right: 0px;
 }
 
 .member-quote blockquote {

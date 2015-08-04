@@ -8,12 +8,48 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
+body div.main-content.open-sidebar {
+	left: 215px;
+	position: static;
+}
+
+nav#site-navigation {
+			// display: none;
+			// clear: right;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			width: 100%;
+			// margin-top: 25px;
+			// padding-left: 20px;
+			font-family: Helvetica, sans-serif;
+			font-size: 1em;
+
+				ul#primary-menu {
+						li {
+							clear: left;
+						}
+
+						ul.sub-menu {
+							left: auto;
+							position: static;
+							z-index: 1;
+							padding-left: 30px;
+							text-align: left;
+						}
+				}
+		}
+
+
 header#masthead {
 	height: 115px;
 	background-color: #2cbf89;
 
-		nav#site-navigation {
-			display: none;
+		img#mobile-menu-icon {
+			display: inline;
+			z-index: 2;
+			float: left;
+			margin: 39px 13px -21px 29px;
 		}
 
 		div.site-branding {
@@ -92,7 +128,7 @@ div#primary #main {
 --------------------------------------------------------------*/
 div.member-menu {
 	width: 100%;
-	margin-top: 0px;
+	margin-top: -34px;
 	font-family: Helvetica, sans-serif;
 	font-size: 0.8em;
 	text-transform: uppercase;
