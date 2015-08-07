@@ -16,7 +16,7 @@ div#page {
 	margin: 0 auto;
 	border: none;
 }
-
+ 
 body div.main-content.open-sidebar {
 	left: 215px;
 	position: static;
@@ -123,9 +123,11 @@ header#masthead {
 
 		a#toggle-menu {
 			position: absolute;
-			top: 30px;
-			left: 29px;
+			top: -1px;
+			left: 11px;
 			z-index: 30;
+
+			padding: 25px;
 
 
 				img#mobile-menu-icon {
