@@ -9,8 +9,12 @@ body {
 }
 
 div#page {
-	max-width: 680px;
+	position: relative;
+	z-index: 20;
+	// max-width: 680px;
+	height: 100%;
 	margin: 0 auto;
+	border: none;
 }
 
 body div.main-content.open-sidebar {
@@ -25,30 +29,91 @@ div#desktop-main-nav {
 nav#mobile-navigation {
 	display: block;
 	position: absolute;
-	left: -37px;
-	top: 90px;
 	width: 100%;
+	height: 100%;
 	font-family: Helvetica, sans-serif;
 	font-size: 1em;
+	background: #2CBF89;	
 
-		ul#mobile-menu.menu {
+		ul#mobile-menu {
+			// display: none;
+			position: absolute;
+			top: 35px;
+			left: 0;
+			
+			width: 200px;
+			// padding: 15px 25px;
+			margin: 0;
+
 			list-style: none;
+			z-index: 10;
 
 				li {
 					clear: left;
-					padding: 5px 0px;
+					padding-left: 18px;
+				}
+
+				li.menu-item.current-menu-item {
+					background: #fff;
 				}
 
 				a {
+					display: block;
 					text-decoration: none;
 					color: #000;
 				}
 
 				ul.sub-menu {
+					margin-left: 0;
 					list-style: none;
 					text-align: left;
 				}
 		}
+
+}
+
+/* Show the menu when animating or visible */
+.animating ul#mobile-menu, .menu-visible ul#mobile-menu {
+  display: block;
+}
+
+/***
+ * If the animating class is present then apply
+ * the CSS transition to #page over 250ms.
+ */
+.animating div#page {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+}
+
+/***
+ * If the left class is present then transform
+ * the #page element 240px to the left.
+ */	
+.animating.right div#page {
+  transform: translate3d( 200px, 0, 0 );
+  -webkit-transform: translate3d( 200px, 0, 0 );
+}
+
+/***
+ * If the right class is present then transform
+ * the #page element 240px to the right.
+ */
+.animating.left div#page {
+  transform: translate3d( -200px, 0, 0 );
+  -webkit-transform: translate3d( -200px, 0, 0 );
+}
+
+/***
+ * If the menu-visible class is present then
+ * shift the #page 240px from the right edge
+ * via position: absolute to keep it in the 
+ * open position. When .animating, .left and
+ * .right classes are not present the CSS
+ * transform does not apply to #page.
+ */
+.menu-visible div#page {
+  left: 200px;
 }
 
 
@@ -56,11 +121,19 @@ header#masthead {
 	height: 91px;
 	background-color: #2cbf89;
 
-		img#mobile-menu-icon {
-			display: inline;
-			z-index: 2;
-			float: left;
-			margin: 30px 13px -21px 29px;
+		a#toggle-menu {
+			position: absolute;
+			top: 30px;
+			left: 29px;
+			z-index: 30;
+
+
+				img#mobile-menu-icon {
+					display: inline;
+					// z-index: 2;
+					float: left;
+					// margin: 30px 13px -21px 29px;
+				}
 		}
 
 		div.site-branding {
@@ -223,6 +296,7 @@ div#primary #main {
 			div.member-bio {
 				margin-top: 30px;
 				-webkit-column-count: 1;
+				-moz-column-count: 1;
 
 					p {
 						margin-bottom: 15px;
@@ -249,7 +323,7 @@ div#primary #main {
 @media only screen and (max-width: 499px) {
 div#page {
 	width: 100%;
-	max-width: 320px;
+	// max-width: 400px;
 	margin: 0 auto;
 	padding: 0;
 	border: none;
@@ -272,7 +346,7 @@ header#masthead {
 				h1#site-title {
 					display: inline;
 					float: right;
-					margin-top: -14px;
+					margin-top: 32px;
 					margin-bottom: 57px;
 					padding-right: 15px;
 					font-size: 1.3em;
@@ -321,6 +395,7 @@ div#primary {
 		}
 
 		section.member-biography {
+			margin-top: 20px;
 
 				header {
 					width: 100%; 
@@ -362,6 +437,79 @@ div#primary {
 }
 
 
+/*--------------------------------------------------------------
+## Inbetween styles
+--------------------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 929px) {
+	header#masthead div.site-branding img#site-logo{
+		width: 21%;
+		margin-top: 45px;
+
+		nav#site-navigation div ul#primary-menu {
+			width: 100%;
+				
+				li a {
+					padding-left: 20px !important;
+				}
+		}
+	}
+
+	div#desktop-main-nav div#social-menu.social-menu {
+				margin-top: -106px;
+			}
+
+	// .site-main {
+	// 	margin: 0;
+
+
+/*--------------------------------------------------------------
+## Homepage
+--------------------------------------------------------------*/
+	section#featured-section {
+		margin-left: 172px;
+	}
+
+	section.social-media-feeds {
+		article.facebook {
+			width: 33%;
+			min-width: 239px;
+		}
+
+		article.youtube {
+			min-width: 210px;
+		}
+	}
+
+	section#homepage-introduction {
+		margin-left: 172px;
+	}
+
+
+/*--------------------------------------------------------------
+## Member Bios Post
+--------------------------------------------------------------*/
+
+	div.member-menu {
+		display: none;
+	}
+
+	section.member-biography {
+		width: 95%;
+		padding-left: 200px;
+	}
+
+	section.member-favorites {
+		width: 75%;
+		float: left;
+		margin-left: 18px;
+		padding-left: 200px;
+	}
+
+
+
+
+
+}
 
 
 /* commenting out the old mobile info for now...
